@@ -74,7 +74,7 @@ app_logos = {
 def display_widgets() -> tuple:
     st.subheader("First, choose a software application from the list below:")
 
-    response = st.empty()
+   # response = st.empty()
     options = [
         "Blender",
         "Unreal Engine",
@@ -90,7 +90,7 @@ def display_widgets() -> tuple:
     ]
     selected_option = st.selectbox("Select:", options)
     app = selected_option
-    app_logo_path = app_logos.get(app)  # Add this line
+    app_logo_path = app_logos.get(app, "")
 
     st.subheader("Next, select the level of difficulty for this class:")
     difficulty = st.select_slider(
