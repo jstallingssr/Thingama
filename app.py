@@ -109,7 +109,7 @@ def display_widgets() -> tuple:
             st.markdown(f"**Class Outline:**\n{class_outline}")
             st.button("New Class", key="new_class_button")
 
-        return class_outline, app, difficulty, app_logo_path
+        return app_logo_path, class_outline, app, difficulty
 
     return None, None, None, None  # Return None values
 
