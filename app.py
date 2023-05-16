@@ -109,7 +109,7 @@ def display_widgets() -> tuple:
             )
             if app_logo_path:
                 st.image(app_logo_path)
-            st.markdown(f"**Class Outline:**\n{class_outline}")
+            #st.markdown(f"**Class Outline:**\n{class_outline}")
             st.button("New Class", key="new_class_button")
 
         return app_logo_path, class_outline, app, difficulty
