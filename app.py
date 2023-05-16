@@ -135,10 +135,10 @@ def main() -> None:
 
         new_class_clicked = False  # Variable to track whether "New Class" button was clicked
 
-        st.markdown(f"**App:** {app}")
-        st.markdown(f"**Difficulty:** {difficulty}")
+        #st.markdown(f"**App:** {app}")
+        #st.markdown(f"**Difficulty:** {difficulty}")
 
-        new_class_clicked = st.button("New Class")
+        #new_class_clicked = st.button("New Class")
 
         if new_class_clicked:
             st.stop()
