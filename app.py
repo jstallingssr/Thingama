@@ -108,6 +108,9 @@ def display_widgets(logo_image) -> tuple:
 
     if st.button("Generate a Class!"):
         unique_id = time()  # Generate a new unique identifier
+        app_logo = app_logos.get(app, None)  # Get the app logo
+    if app_logo:  # If there's a logo for the app, display it
+        st.image(app_logo)
         with st.spinner(text="Building your class - hang tight! This can take up to 30 seconds..."):
             class_outline = get_cached_code_info(
                 app=app, difficulty=difficulty, unique_id=unique_id
@@ -115,11 +118,11 @@ def display_widgets(logo_image) -> tuple:
             st.markdown(f"**Class Outline:**\n{class_outline}")
             st.button("New Class")
 
-        class_outline, app, difficulty, app_logo = display_widgets(logo_image)
+        return class_outline, app, difficulty, app_logo
 
-        app_logo = app_logos.get(app, None)  # Get the app logo
-        if app_logo:  # If there's a logo for the app, display it
-            st.image(app_logo)
+    app_logo = app_logos.get(app, None)  # Get the app logo
+    if app_logo:  # If there's a logo for the app, display it
+        st.image(app_logo)
         return class_outline, app, difficulty, app_logo
 
     return None, None, None, None  # Return None values
