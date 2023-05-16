@@ -107,6 +107,8 @@ def display_widgets() -> tuple:
             class_outline = get_cached_code_info(
                 app=app, difficulty=difficulty, unique_id=unique_id
             )
+            if app_logo_path:
+                st.image(app_logo_path)
             st.markdown(f"**Class Outline:**\n{class_outline}")
             st.button("New Class", key="new_class_button")
 
@@ -127,8 +129,8 @@ def main() -> None:
 
     if class_outline is not None:
 
-        if app_logo_path:
-            st.image(app_logo_path)
+        #if app_logo_path:
+            #st.image(app_logo_path)
 
         new_class_clicked = False  # Variable to track whether "New Class" button was clicked
 
