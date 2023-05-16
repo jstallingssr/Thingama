@@ -1,5 +1,10 @@
-h3 {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+
+h1, ht, h3 {
     font-size: 30px !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 .css-ffhzg2 {
     position: absolute;
