@@ -59,17 +59,17 @@ def get_cached_code_info(app: str, difficulty: str, unique_id: float) -> str:
 
 
 app_logos = {
-    "Blender": "img/blender.png",
-    "Unreal Engine": "img/unreal.png",
-    "Microsoft Excel": "img/excel.png",
-    "Roblox": "img/roblox.png",
-    "Ableton Live": "img/ableton.png",
-    "Godot": "img/godot.png",
-    "BandLab": "img/bandlab.png",
-    "Unity": "img/unity.png",
-    "Construct 3": "img/construct.png",
-    "Minecraft": "img/minecraft.png",
-    "Krita": "img/krita.png",
+    "Blender": "images/blender.png",
+    "Unreal Engine": "images/unreal.png",
+    "Microsoft Excel": "images/excel.png",
+    "Roblox": "images/roblox.png",
+    "Ableton Live": "images/ableton.png",
+    "Godot": "images/godot.png",
+    "BandLab": "images/bandlab.png",
+    "Unity": "images/unity.png",
+    "Construct 3": "images/construct.png",
+    "Minecraft": "images/minecraft.png",
+    "Krita": "images/krita.png",
 }
 
 def display_widgets() -> tuple:
@@ -118,7 +118,7 @@ def display_widgets() -> tuple:
     return None, None, None, None
 
 def main() -> None:
-    st.image("img/app.png")
+    st.image("images/app.png")
     st.markdown(
         "The **Class Creator Thing-a-ma-jig!** is an innovative educational tool that leverages artificial intelligence to create lesson plans for a wide array of software applications. Choose from a curated list of programs, including Blender, Unreal Engine, Unity, and more."
     )

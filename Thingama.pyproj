@@ -25,7 +25,7 @@
     <Compile Include="app.py" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="img\" />
+    <Folder Include="images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
