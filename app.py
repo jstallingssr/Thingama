@@ -78,7 +78,7 @@ app_logos = {
 }
 
 
-def display_widgets() -> tuple:
+def display_widgets(logo_image) -> tuple:
     st.subheader("First, choose a software application from the list below:")
 
     response = st.empty()
