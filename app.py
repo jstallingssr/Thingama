@@ -32,8 +32,7 @@ def send_app(app: str, difficulty: str) -> ChatResponse:
         f"or deliver during class (a game feature, an art asset, a texture, etc.). "
         f"Do not repeat any suggested classes during a user's session."
         f"Each outline should also have an additional resource section at the bottom with relevant links"
-        f"When providing additional resources, only use OFFICIAL resources such as https://docs.blender.org/ "
-        f"https://docs.unrealengine.com/ do not link to videos or fan sites"
+        f"When providing additional resources, only use OFFICIAL resources and working links such as Blender https://docs.blender.org/, Unreal Engine https://docs.unrealengine.com/, Microsoft Excel https://support.microsoft.com/en-us/excel, Roblox https://developer.roblox.com/en-us/, Ableton Live https://www.ableton.com/en/manual/welcome-to-live/, Godot https://docs.godotengine.org/en/stable/, BandLab https://help.bandlab.com/hc/en-us, Unity https://docs.unity3d.com/Manual/index.html, Construct 3 https://www.construct.net/en/make-games/manuals/construct-3, Minecraft https://minecraft.fandom.com/wiki/Tutorials, and Krita https://docs.krita.org/en/."
     )
 
     response = openai.Completion.create(
