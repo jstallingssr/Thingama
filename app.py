@@ -137,10 +137,6 @@ def main() -> None:
     class_outline, app, difficulty, app_logo_path = display_widgets()
 
     if class_outline is not None:
-
-        if app_logo_path:
-            st.image(app_logo_path)
-
         new_class_clicked = False  # Variable to track whether "New Class" button was clicked
 
         st.markdown(f"**App:** {app}")
@@ -149,11 +145,14 @@ def main() -> None:
         if app_logo_path:  # If there's a logo for the app, display it
             st.image(app_logo_path)
 
-        new_class_clicked = st.button("New Class")
+        st.markdown(f"**Class Outline:**\n{class_outline}")
+
+        new_class_clicked = st.button("New Class", key='new_class_button')
 
         if new_class_clicked:
             st.stop()
 
 if __name__ == "__main__":
     main()
+
 
