@@ -1,29 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;700&display=swap');
 
 body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    height: 100vh;
     font-size: 15px !important;
     font-family: 'Montserrat', sans-serif !important;
     font-weight: 300;
 }
 
-@keyframes gradient {
+.css-selector {
+    background: linear-gradient(238deg, #333a8d, #3a3a5e, #8686a5);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 19s ease infinite;
+    -moz-animation: AnimationName 19s ease infinite;
+    animation: AnimationName 19s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
     0% {
-        background-position: 0% 50%;
+        background-position: 0% 88%
     }
 
     50% {
-        background-position: 100% 50%;
+        background-position: 100% 13%
     }
 
     100% {
-        background-position: 0% 50%;
+        background-position: 0% 88%
     }
 }
 
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 88%
+    }
+
+    50% {
+        background-position: 100% 13%
+    }
+
+    100% {
+        background-position: 0% 88%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 88%
+    }
+
+    50% {
+        background-position: 100% 13%
+    }
+
+    100% {
+        background-position: 0% 88%
+    }
+}
 
 h3 {
     font-size: 26px !important;
@@ -63,6 +94,7 @@ p, li {
     font-family: 'Montserrat', sans-serif !important;
     font-weight: 700;
 }
+
 .css-5uatcg {
     font-weight: 700 !important;
     font-family: 'Montserrat', sans-serif !important;
@@ -79,7 +111,6 @@ p, li {
     font-weight: 700 !important;
     font-family: 'Montserrat', sans-serif !important;
 }
-
 
 .st-cn {
     padding-right: 2.5%;
