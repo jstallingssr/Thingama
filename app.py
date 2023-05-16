@@ -14,7 +14,7 @@ st.set_page_config(
 )
 with open("style.css") as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
-    st.image("img/app.png")
+
 class ChatResponse(NamedTuple):
     content: str
 
@@ -115,6 +115,7 @@ def display_widgets() -> tuple:
     return None, None, None, None  # Return None values
 
 def main() -> None:
+    st.image("img/app.png")
     st.markdown(
         "The **Class Creator Thing-a-ma-jig!** is an innovative educational tool that leverages artificial intelligence to create lesson plans for a wide array of software applications. Choose from a curated list of programs, including Blender, Unreal Engine, Unity, and more."
     )
