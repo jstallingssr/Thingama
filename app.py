@@ -71,7 +71,6 @@ app_logos = {
     "Krita": "img/krita.png",
 }
 
-
 def display_widgets() -> tuple:
     st.subheader("First, choose a software application from the list below:")
 
@@ -141,4 +140,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
