@@ -134,9 +134,13 @@ def main() -> None:
     f"Each class can be comfortably completed within a 45-60 minute time frame, and the difficulty level can be customized to match your student's skill, ranging from Beginner to Expert."
     f"Whether you are teaching a one-off class or looking for fresh ideas for your existing students, create unique and comprehensive class outlines with just a few clicks using the Class Creator Thing-a-ma-jig!)"
 
-    class_outline, app, difficulty, app_logo_path = display_widgets()
+    app_logo_path, class_outline, app, difficulty,  = display_widgets()
 
     if class_outline is not None:
+
+        if app_logo_path:
+            st.image(app_logo_path)
+
         new_class_clicked = False  # Variable to track whether "New Class" button was clicked
 
         st.markdown(f"**App:** {app}")
@@ -145,14 +149,11 @@ def main() -> None:
         if app_logo_path:  # If there's a logo for the app, display it
             st.image(app_logo_path)
 
-        st.markdown(f"**Class Outline:**\n{class_outline}")
-
-        new_class_clicked = st.button("New Class", key='new_class_button')
+        new_class_clicked = st.button("New Class")
 
         if new_class_clicked:
             st.stop()
 
 if __name__ == "__main__":
     main()
-
 
