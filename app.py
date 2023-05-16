@@ -104,9 +104,6 @@ def display_widgets() -> tuple:
         "Select:", options=["Beginner", "Intermediate", "Advanced", "Expert"]
     )
 
-    # Get the app logo image path
-    app_logo = app_logos.get(app)
-
     class_outline = None  # Initialize class_outline with None
     unique_id = None  # Initialize unique_id with None
 
@@ -119,9 +116,10 @@ def display_widgets() -> tuple:
             st.markdown(f"**Class Outline:**\n{class_outline}")
             st.button("New Class", key="new_class_button")
 
-        return class_outline, app, difficulty, app_logo
+        return class_outline, app, difficulty, app_logo_path
 
     return None, None, None, None  # Return None values
+
 def main() -> None:
     st.markdown(
         "The **Class Creator Thing-a-ma-jig!** is an innovative educational tool that leverages artificial intelligence to create lesson plans for a wide array of software applications. Choose from a curated list of programs, including Blender, Unreal Engine, Unity, and more."
