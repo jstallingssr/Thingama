@@ -119,10 +119,6 @@ def display_widgets() -> tuple:
             st.markdown(f"**Class Outline:**\n{class_outline}")
             st.button("New Class", key="new_class_button")
 
-        # This line caused the recursion, I commented it out.
-        # class_outline, app, difficulty, app_logo = display_widgets(logo_image)
-        # return class_outline, app, difficulty, app_logo
-
         return class_outline, app, difficulty, app_logo
 
     return None, None, None, None  # Return None values
@@ -145,9 +141,6 @@ def main() -> None:
 
         st.markdown(f"**App:** {app}")
         st.markdown(f"**Difficulty:** {difficulty}")
-
-        if app_logo_path:  # If there's a logo for the app, display it
-            st.image(app_logo_path)
 
         new_class_clicked = st.button("New Class")
 
