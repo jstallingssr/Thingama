@@ -15,10 +15,6 @@ st.set_page_config(
 with open("style.css") as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 
-    logo_image = st.empty()
-    logo_image.image("img/logo.png")
-
-
 class ChatResponse(NamedTuple):
     content: str
 
