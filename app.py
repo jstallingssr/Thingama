@@ -127,6 +127,9 @@ def display_widgets(logo_image) -> tuple:
 
     return None, None, None, None  # Return None values
 def main() -> None:
+
+    logo_image = st.empty()
+    class_outline, app, difficulty, app_logo = display_widgets(logo_image)
     st.markdown(
         "The **Class Creator Thing-a-ma-jig!** is an innovative educational tool that leverages artificial intelligence to create lesson plans for a wide array of software applications. Choose from a curated list of programs, including Blender, Unreal Engine, Unity, and more."
     )
