@@ -104,12 +104,12 @@ def display_widgets() -> tuple:
     if st.button("Generate a Class!", key="generate_class_button"):
         unique_id = time()  # Generate a new unique identifier
         with st.spinner(text="Building your class - hang tight! This can take up to 30 seconds..."):
-            if app_logo_path:
-                st.image(app_logo_path)
+
             class_outline = get_cached_code_info(
                 app=app, difficulty=difficulty, unique_id=unique_id
             )
-
+            if app_logo_path:
+                st.image(app_logo_path)
             st.markdown(f"**Class Outline:**\n{class_outline}")
             st.button("New Class", key="new_class_button")
 
