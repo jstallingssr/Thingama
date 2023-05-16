@@ -78,7 +78,7 @@ app_logos = {
 }
 
 
-def display_widgets(logo_image) -> tuple:
+def display_widgets() -> tuple:
     st.subheader("First, choose a software application from the list below:")
 
     response = st.empty()
@@ -97,6 +97,9 @@ def display_widgets(logo_image) -> tuple:
     ]
     selected_option = st.selectbox("Select:", options)
     app = selected_option
+
+    # Get the app logo image path
+    app_logo = app_logos.get(app
 
     st.subheader("Next, select the level of difficulty for this class:")
     difficulty = st.select_slider(
