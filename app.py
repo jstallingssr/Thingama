@@ -98,13 +98,13 @@ def display_widgets() -> tuple:
     selected_option = st.selectbox("Select:", options)
     app = selected_option
 
-    # Get the app logo image path
-    app_logo = app_logos.get(app)
-
     st.subheader("Next, select the level of difficulty for this class:")
     difficulty = st.select_slider(
         "Select:", options=["Beginner", "Intermediate", "Advanced", "Expert"]
     )
+
+    # Get the app logo image path
+    app_logo = app_logos.get(app)
 
     class_outline = None  # Initialize class_outline with None
     unique_id = None  # Initialize unique_id with None
@@ -118,7 +118,10 @@ def display_widgets() -> tuple:
             st.markdown(f"**Class Outline:**\n{class_outline}")
             st.button("New Class")
 
-        class_outline, app, difficulty, app_logo = display_widgets(logo_image)
+        # This line caused the recursion, I commented it out.
+        # class_outline, app, difficulty, app_logo = display_widgets(logo_image)
+        # return class_outline, app, difficulty, app_logo
+
         return class_outline, app, difficulty, app_logo
 
     return None, None, None, None  # Return None values
