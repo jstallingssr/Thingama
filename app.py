@@ -14,7 +14,7 @@ st.set_page_config(
 )
 with open("style.css") as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
-    st.image(img/app.png)
+    st.image("img/app.png")
 class ChatResponse(NamedTuple):
     content: str
 
