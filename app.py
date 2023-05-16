@@ -74,7 +74,7 @@ app_logos = {
 
 def display_widgets() -> tuple:
     st.subheader("First, choose a software application from the list below:")
-
+    st.image("/images/lblApp.png")
    # response = st.empty()
     options = [
         "Blender",
