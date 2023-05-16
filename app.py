@@ -15,7 +15,8 @@ st.set_page_config(
 with open("style.css") as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 
-    st.image("img/logo.png")
+    logo_image = st.empty()
+    logo_image.image("img/logo.png")
 
 
 class ChatResponse(NamedTuple):
@@ -77,7 +78,7 @@ app_logos = {
 }
 
 
-def display_widgets() -> tuple:
+def display_widgets(logo_image) -> tuple:
     st.subheader("First, choose a software application from the list below:")
 
     response = st.empty()
@@ -114,7 +115,11 @@ def display_widgets() -> tuple:
             st.markdown(f"**Class Outline:**\n{class_outline}")
             st.button("New Class")
 
+        class_outline, app, difficulty, app_logo = display_widgets(logo_image)
+
         app_logo = app_logos.get(app, None)  # Get the app logo
+        if app_logo:  # If there's a logo for the app, display it
+            st.image(app_logo)
         return class_outline, app, difficulty, app_logo
 
     return None, None, None, None  # Return None values
