@@ -104,17 +104,18 @@ def display_widgets() -> tuple:
     if st.button("Generate a Class!", key="generate_class_button"):
         unique_id = time()  # Generate a new unique identifier
         with st.spinner(text="Building your class - hang tight! This can take up to 30 seconds..."):
+            if app_logo_path:
+                st.image(app_logo_path)
             class_outline = get_cached_code_info(
                 app=app, difficulty=difficulty, unique_id=unique_id
             )
-            if app_logo_path:
-                st.image(app_logo_path)
+
             st.markdown(f"**Class Outline:**\n{class_outline}")
             st.button("New Class", key="new_class_button")
 
         return app_logo_path, class_outline, app, difficulty
 
-    return None, None, None, None  # Return None values
+    return None, None, None, None
 
 def main() -> None:
     st.image("img/app.png")
@@ -125,7 +126,7 @@ def main() -> None:
     f"Each class can be comfortably completed within a 45-60 minute time frame, and the difficulty level can be customized to match your student's skill, ranging from Beginner to Expert."
     f"Whether you are teaching a one-off class or looking for fresh ideas for your existing students, create unique and comprehensive class outlines with just a few clicks using the Class Creator Thing-a-ma-jig!)"
 
-    app_logo_path, class_outline, app, difficulty,  = display_widgets()
+    app_logo_path, class_outline, app, difficulty, = display_widgets()
 
     if class_outline is not None:
 
