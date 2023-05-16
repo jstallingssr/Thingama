@@ -11,13 +11,8 @@ st.set_page_config(
     page_icon="🧊",
     layout="centered",
 )
-
 with open("style.css") as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
-
-    logo_image = st.empty()
-    logo_image.image("img/logo.png")
-
 
 class ChatResponse(NamedTuple):
     content: str
@@ -51,7 +46,6 @@ def send_app(app: str, difficulty: str) -> ChatResponse:
     )
 
     return ChatResponse(response.choices[0].text.strip())
-
 
 def retrieve_ai_answer(app: str, difficulty: str) -> str:
     return send_app(app, difficulty).content.strip()
