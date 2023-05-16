@@ -97,6 +97,7 @@ def display_widgets() -> tuple:
     ]
     selected_option = st.selectbox("Select:", options)
     app = selected_option
+    app_logo_path = app_logos.get(app)  # Add this line
 
     st.subheader("Next, select the level of difficulty for this class:")
     difficulty = st.select_slider(
@@ -133,9 +134,13 @@ def main() -> None:
     f"Each class can be comfortably completed within a 45-60 minute time frame, and the difficulty level can be customized to match your student's skill, ranging from Beginner to Expert."
     f"Whether you are teaching a one-off class or looking for fresh ideas for your existing students, create unique and comprehensive class outlines with just a few clicks using the Class Creator Thing-a-ma-jig!)"
 
-    class_outline, app, difficulty, app_logo = display_widgets()
+    class_outline, app, difficulty, app_logo_path = display_widgets()
 
     if class_outline is not None:
+
+        if app_logo_path:
+            st.image(app_logo_path)
+
         new_class_clicked = False  # Variable to track whether "New Class" button was clicked
 
         st.markdown(f"**App:** {app}")
