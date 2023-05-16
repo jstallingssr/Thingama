@@ -146,8 +146,8 @@ def main() -> None:
         st.markdown(f"**App:** {app}")
         st.markdown(f"**Difficulty:** {difficulty}")
 
-        if app_logo:  # If there's a logo for the app, display it
-            st.image(app_logo)
+        if app_logo_path:  # If there's a logo for the app, display it
+            st.image(app_logo_path)
 
         new_class_clicked = st.button("New Class")
 
