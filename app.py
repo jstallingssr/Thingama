@@ -74,7 +74,7 @@ app_logos = {
 
 def display_widgets() -> tuple:
     st.subheader("First, choose a software application from the list below:")
-    st.image("/images/lblApp.png")
+    st.image("images/lblApp.png")
    # response = st.empty()
     options = [
         "Blender",
@@ -93,7 +93,7 @@ def display_widgets() -> tuple:
     app = selected_option
     app_logo_path = app_logos.get(app, "")
 
-    st.image("/images/lblDiff.png")
+    st.image("images/lblDiff.png")
     difficulty = st.select_slider(
         "Select:", options=["Beginner", "Intermediate", "Advanced", "Expert"]
     )
