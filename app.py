@@ -99,7 +99,7 @@ def display_widgets() -> tuple:
     app = selected_option
 
     # Get the app logo image path
-    app_logo = app_logos.get(app
+    app_logo = app_logos.get(app)
 
     st.subheader("Next, select the level of difficulty for this class:")
     difficulty = st.select_slider(
