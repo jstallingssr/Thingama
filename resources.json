@@ -5,12 +5,21 @@
     "Blender.org https://www.blender.org/",
     "Blender Guru https://www.blenderguru.com/",
     "CG Cookie https://https://cgcookie.com/",
-    "Blender Nation https://www.blendernation.com/"
+    "Blender Nation https://www.blendernation.com/",
+    "Blender Artists https://blenderartists.org/",
+    "Blender Cloud https://cloud.blender.org/"
+
   ],
   "Unreal Engine": [
     "Unreal Engine Documentation https://docs.unrealengine.com/",
     "Unreal Engine Learning Library https://dev.epicgames.com/community/unreal-engine/learning",
-    "https://www.unrealengine.com/en-US/onlinelearning-courses"
+    "Unreal Engine for Educators https://www.unrealengine.com/en-US/educators",
+    "Unreal Slackers Discord https://discord.gg/unreal-slackers",
+    "Unreal Engine Forums https://forums.unrealengine.com/",
+    "Unreal Engine AnswerHub https://answers.unrealengine.com/index.html",
+    "Unreal Engine YouTube https://www.youtube.com/user/UnrealDevelopmentKit/playlists",
+    "Unreal Engine Twitch https://www.twitch.tv/unrealengine"
+
   ],
   "Microsoft Excel": [
     "https://support.microsoft.com/en-us/excel",
