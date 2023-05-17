@@ -21,21 +21,20 @@ class ChatResponse(NamedTuple):
 
 def send_app(app: str, difficulty: str) -> ChatResponse:
     prompt = (
-        f"I would like a lesson plan for {app} at the {difficulty} level. "
-        f"These are educational classes, where students will learn a skill using the selected app. "
-        f"This should be a very specific feature in the software, not a general overview. "
-        f"Each class should be able to be completed within 45-60 minutes."
-        f"Please provide only one class outline with a catchy title shown at the top. "
-        f"The outline should be formatted in markdown, outline format. "
-        f"The outline should be very detailed, up to three levels deep. "
-        f"Each class should include three to five specific items that the student will create and deliver "
-        f"or deliver during class (a game feature, an art asset, a texture, etc.). "
-        f"Do not repeat any suggested classes during a user's session."
-        f"Do not list time estimates for each item."
-        f"Each class should have a list of required materials at the top, including any software, hardware, or other materials needed to complete the class. "
-        f"Each outline should also have an additional resource section at the bottom with relevant links"
-        f"When providing additional resources, only use OFFICIAL resources and working links such as Blender https://docs.blender.org/, Unreal Engine https://docs.unrealengine.com/, Microsoft Excel https://support.microsoft.com/en-us/excel, Roblox https://developer.roblox.com/en-us/, Ableton Live https://www.ableton.com/en/manual/welcome-to-live/, Godot https://docs.godotengine.org/en/stable/, BandLab https://help.bandlab.com/hc/en-us, Unity https://docs.unity3d.com/Manual/index.html, Construct 3 https://www.construct.net/en/make-games/manuals/construct-3, Minecraft https://minecraft.fandom.com/wiki/Tutorials, and Krita https://docs.krita.org/en/."
+        f"Create a {difficulty}-level lesson plan for {app}. The class should focus on a specific feature "
+        f"of the software and be achievable within a 45-60 minute timeframe. "
+        f"Please provide the following details in markdown format:\n"
+        f"- A catchy title\n"
+        f"- An outline detailing up to three levels of depth\n"
+        f"- Three to five specific deliverables for the students to create during the class\n"
+        f"- A list of required materials, including software, hardware, and other necessary items\n"
+        f"- An 'Additional Resources' section containing links to relevant official documentation like "
+        f"[Blender](https://docs.blender.org/), [Unreal Engine](https://docs.unrealengine.com/), "
+        f"[Microsoft Excel](https://support.microsoft.com/en-us/excel), and others.\n\n"
+        f"Please ensure that no class is repeated within a user's session and that no time estimates "
+        f"are provided for each item. Thank you."
     )
+
 
     response = openai.Completion.create(
         engine="text-davinci-003",
