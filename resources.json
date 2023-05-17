@@ -22,8 +22,30 @@
 
   ],
   "Microsoft Excel": [
-    "https://support.microsoft.com/en-us/excel",
-    "https://exceljet.net/",
-    "https://www.gcflearnfree.org/excel2016/"
+    "Official Excel Help & Learning https://support.microsoft.com/en-us/excel",
+    "Exceljet https://exceljet.net/",
+    "Contextures https://www.contextures.com/",
+    "Excel Easy https://www.excel-easy.com/",
+    "Excel Campus https://www.excelcampus.com/",
+    "Excel Off The Grid https://exceloffthegrid.com/",
+    "Excel Unplugged https://excelunplugged.com/",
+    "Excel Champs https://www.excelchamps.com/blog/",
+    "Excel University https://www.excel-university.com/blog/"
+  ],
+
+  "Minecraft": [
+    "Minecraft Official Site https://www.minecraft.net/en-us",
+    "Minecraft YouTube https://www.youtube.com/Minecraft",
+    "Minecraft Wiki https://minecraft.gamepedia.com/Minecraft_Wiki",
+    "Minecraft Forum https://www.minecraftforum.net/",
+    "Minecraft Reddit https://www.reddit.com/r/Minecraft/",
+    "Minecraft Discord https://discord.gg/minecraft",
+    "Minecraft Marketplace https://www.minecraft.net/en-us/marketplace",
+    "Minecraft Feedback https://feedback.minecraft.net/hc/en-us"
   ]
+
+
+
+
+
 }
