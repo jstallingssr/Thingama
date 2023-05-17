@@ -10,6 +10,16 @@
     "Ableton Live Tutorials https://www.ableton.com/en/live/learn-live/"
 
   ],
+  "BandLab": [
+    "BandLab Official Site https://www.bandlab.com/",
+    "BandLab YouTube https://www.youtube.com/channel/UCo6RzWS9s8r0Zy6yWU9VJmw",
+    "BandLab Blog https://blog.bandlab.com/",
+    "BandLab Twitter https://twitter.com/bandlab",
+    "BandLab Facebook https://www.facebook.com/bandlab/",
+    "BandLab Instagram https://www.instagram.com/bandlab/",
+    "BandLab LinkedIn https://www.linkedin.com/company/bandlab",
+    "BandLab Discord https://discord.gg/bandlab"
+  ],
   "Blender": [
     "Official Documentation: https://docs.blender.org/",
     "Blender StackExchange: https://blender.stackexchange.com/",
@@ -19,6 +29,19 @@
     "Blender Nation https://www.blendernation.com/",
     "Blender Artists https://blenderartists.org/",
     "Blender Cloud https://cloud.blender.org/"
+
+  ],
+  "Construct 3": [
+    "Construct 3 Documentation https://www.construct.net/en/make-games/manuals/construct-3",
+    "Construct 3 Tutorials https://www.construct.net/en/tutorials",
+    "Construct 3 on YouTube https://www.youtube.com/ConstructTeam",
+    "Construct 3 Community Forum https://www.construct.net/en/forum/construct-3/general-discussion-7",
+    "Construct 3 Asset Store https://www.construct.net/en/make-games/addons",
+    "Construct 3 Learning Portal https://learn.construct.net/",
+    "Construct 3 on GitHub https://github.com/Scirra",
+    "Construct 3 on Stack Overflow https://stackoverflow.com/questions/tagged/construct-3",
+    "Construct 3 Academy https://www.construct.net/en/construct-3/academy",
+    "Construct 3 on Reddit https://www.reddit.com/r/construct/"
 
   ],
   "Godot": [
@@ -53,6 +76,24 @@
     "Minecraft Marketplace https://www.minecraft.net/en-us/marketplace",
     "Minecraft Feedback https://feedback.minecraft.net/hc/en-us"
   ],
+  "Roblox": [
+    "Roblox Official Site https://www.roblox.com/",
+    "Roblox Developer Hub https://developer.roblox.com/",
+    "Roblox Developer Forum https://devforum.roblox.com/",
+    "Roblox YouTube https://www.youtube.com/user/roblox",
+    "Roblox Wiki https://roblox.fandom.com/wiki/Roblox_Wiki",
+    "Roblox Reddit https://www.reddit.com/r/roblox/",
+    "Roblox Discord https://discord.gg/roblox",
+    "Roblox Twitter https://twitter.com/Roblox"
+  ],
+  "Twinmotion": [
+    "Twinmotion Official Site https://twinmotion.link/official",
+    "Twinmotion YouTube https://twinmotion.link/youtube",
+    "Twinmotion Community Forum https://twinmotion.link/forum",
+    "Twinmotion on Instagram https://twinmotion.link/instagram",
+    "Twinmotion on Twitch https://twinmotion.link/twitch",
+    "Twinmotion on Discord https://twinmotion.link/discord"
+  ],
   "Unity": [
     "Official Unity Site https://unity.com/",
     "Unity Learn https://learn.unity.com/",
@@ -74,30 +115,5 @@
     "Unreal Engine YouTube https://www.youtube.com/user/UnrealDevelopmentKit/playlists",
     "Unreal Engine Twitch https://www.twitch.tv/unrealengine"
 
-  ],
-  "Roblox": [
-    "Roblox Official Site https://www.roblox.com/",
-    "Roblox Developer Hub https://developer.roblox.com/",
-    "Roblox Developer Forum https://devforum.roblox.com/",
-    "Roblox YouTube https://www.youtube.com/user/roblox",
-    "Roblox Wiki https://roblox.fandom.com/wiki/Roblox_Wiki",
-    "Roblox Reddit https://www.reddit.com/r/roblox/",
-    "Roblox Discord https://discord.gg/roblox",
-    "Roblox Twitter https://twitter.com/Roblox"
-  ],
-
-  "BandLab": [
-    "BandLab Official Site https://www.bandlab.com/",
-    "BandLab YouTube https://www.youtube.com/channel/UCo6RzWS9s8r0Zy6yWU9VJmw",
-    "BandLab Blog https://blog.bandlab.com/",
-    "BandLab Twitter https://twitter.com/bandlab",
-    "BandLab Facebook https://www.facebook.com/bandlab/",
-    "BandLab Instagram https://www.instagram.com/bandlab/",
-    "BandLab LinkedIn https://www.linkedin.com/company/bandlab",
-    "BandLab Discord https://discord.gg/bandlab"
-  ],
-  "Construct 3": [
-    ""
-  
   ]
 }
