@@ -23,10 +23,10 @@ class ChatResponse(NamedTuple):
 
 def send_app(app: str, difficulty: str) -> ChatResponse:
     with open('official_resources.json', 'r') as f:
-        official_resources = json.load(f)
+        resources = json.load(f)
 
     # Select three resources randomly
-    selected_resources = random.sample(official_resources.get(app, []), 3)
+    selected_resources = random.sample(resources.get(app, []), 3)
     
     prompt = (
         f"Create a {difficulty}-level lesson plan for {app}. The class should focus on a specific feature "
