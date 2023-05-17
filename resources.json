@@ -1,4 +1,15 @@
 {
+  "Ableton Live": [
+    "Official Ableton Live Site https://www.ableton.com/en/",
+    "Ableton Live Manual https://www.ableton.com/en/manual/welcome-to-live/",
+    "Ableton Live Forum https://forum.ableton.com/",
+    "Ableton Live Reddit https://www.reddit.com/r/ableton/",
+    "Ableton Live YouTube https://www.youtube.com/user/AbletonInc/playlists",
+    "Coding with Ableton and Max for Live https://www.ableton.com/en/live/max-for-live/ ",
+    "Ableton Live Discord https://discord.gg/ableton-live",
+    "Ableton Live Tutorials https://www.ableton.com/en/live/learn-live/"
+
+  ],
   "Blender": [
     "Official Documentation: https://docs.blender.org/",
     "Blender StackExchange: https://blender.stackexchange.com/",
@@ -10,16 +21,16 @@
     "Blender Cloud https://cloud.blender.org/"
 
   ],
-  "Unreal Engine": [
-    "Unreal Engine Documentation https://docs.unrealengine.com/",
-    "Unreal Engine Learning Library https://dev.epicgames.com/community/unreal-engine/learning",
-    "Unreal Engine for Educators https://www.unrealengine.com/en-US/educators",
-    "Unreal Slackers Discord https://discord.gg/unreal-slackers",
-    "Unreal Engine Forums https://forums.unrealengine.com/",
-    "Unreal Engine AnswerHub https://answers.unrealengine.com/index.html",
-    "Unreal Engine YouTube https://www.youtube.com/user/UnrealDevelopmentKit/playlists",
-    "Unreal Engine Twitch https://www.twitch.tv/unrealengine"
-
+  "Godot": [
+    "Godot Engine Documentation https://docs.godotengine.org/en/stable/",
+    "Godot Engine Tutorials https://docs.godotengine.org/en/stable/tutorials/index.html",
+    "Godot Engine YouTube Channel https://www.youtube.com/c/GodotEngineOfficial",
+    "Godot Engine on GitHub https://github.com/godotengine/godot",
+    "Godot Recipes by KidsCanCode https://kidscancode.org/godot_recipes/",
+    "Godot Asset Library https://godotengine.org/asset-library/asset",
+    "Godot Community Forums https://godotforums.org/",
+    "Godot on Stack Overflow https://stackoverflow.com/questions/tagged/godot",
+    "Godot Engine on Reddit https://www.reddit.com/r/godot/"
   ],
   "Microsoft Excel": [
     "Official Excel Help & Learning https://support.microsoft.com/en-us/excel",
@@ -32,7 +43,6 @@
     "Excel Champs https://www.excelchamps.com/blog/",
     "Excel University https://www.excel-university.com/blog/"
   ],
-
   "Minecraft": [
     "Minecraft Official Site https://www.minecraft.net/en-us",
     "Minecraft YouTube https://www.youtube.com/Minecraft",
@@ -43,19 +53,26 @@
     "Minecraft Marketplace https://www.minecraft.net/en-us/marketplace",
     "Minecraft Feedback https://feedback.minecraft.net/hc/en-us"
   ],
-
-  "Ableton Live": [
-    "Official Ableton Live Site https://www.ableton.com/en/",
-    "Ableton Live Manual https://www.ableton.com/en/manual/welcome-to-live/",
-    "Ableton Live Forum https://forum.ableton.com/",
-    "Ableton Live Reddit https://www.reddit.com/r/ableton/",
-    "Ableton Live YouTube https://www.youtube.com/user/AbletonInc/playlists",
-    "Coding with Ableton and Max for Live https://www.ableton.com/en/live/max-for-live/ ",
-    "Ableton Live Discord https://discord.gg/ableton-live",
-    "Ableton Live Tutorials https://www.ableton.com/en/live/learn-live/"
+  "Unity": [
+    "Official Unity Site https://unity.com/",
+    "Unity Learn https://learn.unity.com/",
+    "Unity Documentation https://docs.unity3d.com/Manual/index.html",
+    "Unity Answers https://answers.unity.com/index.html",
+    "Unity Forum https://forum.unity.com/",
+    "Unity YouTube https://www.youtube.com/user/Unity3D/playlists",
+    "Unity Reddit https://www.reddit.com/r/Unity3D/",
+    "Unity Discord https://discord.gg/unity",
+    "Unity Asset Store https://assetstore.unity.com/"
+  ],
+  "Unreal Engine": [
+    "Unreal Engine Documentation https://docs.unrealengine.com/",
+    "Unreal Engine Learning Library https://dev.epicgames.com/community/unreal-engine/learning",
+    "Unreal Engine for Educators https://www.unrealengine.com/en-US/educators",
+    "Unreal Slackers Discord https://discord.gg/unreal-slackers",
+    "Unreal Engine Forums https://forums.unrealengine.com/",
+    "Unreal Engine AnswerHub https://answers.unrealengine.com/index.html",
+    "Unreal Engine YouTube https://www.youtube.com/user/UnrealDevelopmentKit/playlists",
+    "Unreal Engine Twitch https://www.twitch.tv/unrealengine"
 
   ]
-
-
-
 }
