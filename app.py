@@ -33,7 +33,7 @@ def send_app(app: str, difficulty: str) -> ChatResponse:
         f"of the software and be achievable within a 45-60 minute timeframe. "
         f"Please provide the following details in markdown format:\n"
         f"- A catchy title\n"
-        f"- An outline detailing up to three levels of depth\n"
+        f"- An outline detailing at least three levels of depth\n"
         f"- Three to five specific deliverables for the students to create during the class\n"
         f"- A list of required materials, including software, hardware, and other necessary items\n"
         f"- An 'Additional Resources' section containing up to three links to the official documentation: {', '.join(selected_resources)}\n\n"
