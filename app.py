@@ -1,7 +1,8 @@
-﻿from typing import NamedTuple
-from functools import partial
-import openai
+﻿import openai
 import streamlit as st
+import random
+from typing import NamedTuple
+from functools import partial
 from time import time
 
 openai.api_key = st.secrets["OPENAI_API_KEY"]
@@ -21,20 +22,13 @@ class ChatResponse(NamedTuple):
 
 def send_app(app: str, difficulty: str) -> ChatResponse:
     official_resources = {
-        "Blender": "https://docs.blender.org/",
-        "Blender Official Website": "https://www.blender.org/",
-        "Blender Guru": "https://www.blenderguru.com/",
-        "CG Cookie": "https://cgcookie.com/",
-        "Blender Nation": "https://www.blendernation.com/",
-        "Blender Stack Exchange": "https://blender.stackexchange.com/",
-        "Blender Artists": "https://blenderartists.org/",
-        "BlenderNation": "https://www.blendernation.com/",
-        "Blender.Today": "http://blender.today/",
-        "Unreal Engine": "https://docs.unrealengine.com/",
-        "Microsoft Excel": "https://support.microsoft.com/en-us/excel"
+        "Blender": ["https://docs.blender.org/", "https://www.blender.org/", "https://www.blenderguru.com/"],
+        "Unreal Engine": ["https://docs.unrealengine.com/", "https://www.unrealengine.com/", "https://www.unrealengine.com/en-US/onlinelearning-courses"],
+        "Microsoft Excel": ["https://support.microsoft.com/en-us/excel", "https://exceljet.net/", "https://www.gcflearnfree.org/excel2016/"],
         # ... add other apps and their official resources here
     }
-    official_resource = official_resources.get(app, "")
+    # Select three resources randomly
+    selected_resources = random.sample(official_resources.get(app, []), 3)
     
     prompt = (
         f"Create a {difficulty}-level lesson plan for {app}. The class should focus on a specific feature "
@@ -44,7 +38,7 @@ def send_app(app: str, difficulty: str) -> ChatResponse:
         f"- An outline detailing up to three levels of depth\n"
         f"- Three to five specific deliverables for the students to create during the class\n"
         f"- A list of required materials, including software, hardware, and other necessary items\n"
-        f"- An 'Additional Resources' section containing up to four links to the official documentation: {official_resource}\n\n"
+        f"- An 'Additional Resources' section containing up to three links to the official documentation: {', '.join(selected_resources)}\n\n"
         f"Please ensure that no class is repeated within a user's session and that no time estimates "
         f"are provided for each item. Thank you."
     )
