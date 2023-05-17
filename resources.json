@@ -47,8 +47,8 @@
     "Minecraft Official Site https://www.minecraft.net/en-us",
     "Minecraft YouTube https://www.youtube.com/Minecraft",
     "Minecraft Wiki https://minecraft.gamepedia.com/Minecraft_Wiki",
-    "Minecraft Forum https://www.minecraftforum.net/",
-    "Minecraft Reddit https://www.reddit.com/r/Minecraft/",
+    "Minecraft Coding https://code.org/minecraft",
+    "Minecraft Education https://education.minecraft.net/en-us/",
     "Minecraft Discord https://discord.gg/minecraft",
     "Minecraft Marketplace https://www.minecraft.net/en-us/marketplace",
     "Minecraft Feedback https://feedback.minecraft.net/hc/en-us"
@@ -74,5 +74,30 @@
     "Unreal Engine YouTube https://www.youtube.com/user/UnrealDevelopmentKit/playlists",
     "Unreal Engine Twitch https://www.twitch.tv/unrealengine"
 
+  ],
+  "Roblox": [
+    "Roblox Official Site https://www.roblox.com/",
+    "Roblox Developer Hub https://developer.roblox.com/",
+    "Roblox Developer Forum https://devforum.roblox.com/",
+    "Roblox YouTube https://www.youtube.com/user/roblox",
+    "Roblox Wiki https://roblox.fandom.com/wiki/Roblox_Wiki",
+    "Roblox Reddit https://www.reddit.com/r/roblox/",
+    "Roblox Discord https://discord.gg/roblox",
+    "Roblox Twitter https://twitter.com/Roblox"
+  ],
+
+  "BandLab": [
+    "BandLab Official Site https://www.bandlab.com/",
+    "BandLab YouTube https://www.youtube.com/channel/UCo6RzWS9s8r0Zy6yWU9VJmw",
+    "BandLab Blog https://blog.bandlab.com/",
+    "BandLab Twitter https://twitter.com/bandlab",
+    "BandLab Facebook https://www.facebook.com/bandlab/",
+    "BandLab Instagram https://www.instagram.com/bandlab/",
+    "BandLab LinkedIn https://www.linkedin.com/company/bandlab",
+    "BandLab Discord https://discord.gg/bandlab"
+  ],
+  "Construct 3": [
+    ""
+  
   ]
 }

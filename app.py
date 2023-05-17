@@ -75,6 +75,7 @@ app_logos = {
     "Construct 3": "images/construct.png",
     "Minecraft": "images/minecraft.png",
     "Krita": "images/krita.png",
+    "Twinmotion": "images/twinmotion.png"
 }
 
 def display_widgets() -> tuple:
