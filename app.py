@@ -93,7 +93,7 @@ def display_widgets() -> tuple:
 
     st.image("images/lblDiff.png")
     difficulty = st.select_slider(
-        "Select:", options=["Beginner", "Intermediate", "Advanced", "Expert"]
+        "Select:", options=["Beginner", "Intermediate", "Expert"]
     )
 
     class_outline = None  # Initialize class_outline with None
@@ -118,7 +118,7 @@ def display_widgets() -> tuple:
 def main() -> None:
     st.image("images/app.png")
     st.markdown(
-        "The **Class Creator Thing-a-ma-jig!** is an innovative educational tool that leverages artificial intelligence to create lesson plans for a wide array of software applications. Choose from a curated list of programs, including Blender, Unreal Engine, Unity, and more. Each class can be comfortably completed within a 45-60 minute time frame, and the difficulty level can be customized to match your student's skill, ranging from Beginner to Expert."
+        "The **Class Creator Thing-a-ma-jig!** is an innovative educational tool that leverages artificial intelligence to create lesson plans for a wide array of software applications. Choose from a curated list of programs, including Blender, Unreal Engine, Unity, and more. Each class can be comfortably completed within a 45-60 minute time frame, and the difficulty level can be customized to match your student's skill level."
     )
 
     f"Whether you are teaching a one-off class or looking for fresh ideas for your existing students, create unique and comprehensive class outlines with just a few clicks using the **Class Creator Thing-a-ma-jig**!"
