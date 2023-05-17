@@ -29,6 +29,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
+    <Content Include="resources.json" />
     <Content Include="style.css" />
   </ItemGroup>
   <ItemGroup>
