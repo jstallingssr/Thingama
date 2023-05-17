@@ -45,10 +45,10 @@ def send_app(app: str, difficulty: str) -> ChatResponse:
     response = openai.Completion.create(
         engine="text-davinci-003",
         prompt=prompt,
-        max_tokens=1024,
+        max_tokens=1800,
         n=1,
         stop=None,
-        temperature=0.8,
+        temperature=0.9,
     )
 
     return ChatResponse(response.choices[0].text.strip())
