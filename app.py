@@ -93,6 +93,7 @@ def display_widgets() -> tuple:
         "Construct 3",
         "Minecraft",
         "Krita",
+        "Twinmotion"
     ]
     selected_option = st.selectbox("Select:", options)
     app = selected_option
