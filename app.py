@@ -22,7 +22,7 @@ class ChatResponse(NamedTuple):
 
 
 def send_app(app: str, difficulty: str) -> ChatResponse:
-    with open('official_resources.json', 'r') as f:
+    with open('resources.json', 'r') as f:
         resources = json.load(f)
 
     # Select three resources randomly
