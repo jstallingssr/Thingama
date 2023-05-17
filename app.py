@@ -22,7 +22,7 @@ class ChatResponse(NamedTuple):
 
 def send_app(app: str, difficulty: str) -> ChatResponse:
     official_resources = {
-        "Blender": ["https://docs.blender.org/", "https://www.blender.org/", "https://www.blenderguru.com/"],
+        "Blender": ["Official Documentation: https://docs.blender.org/", "Blender.org https://www.blender.org/", "Blender Guru https://www.blenderguru.com/", "CG Cookie https://https://cgcookie.com/", "Blender Nation https://www.blendernation.com/"],
         "Unreal Engine": ["https://docs.unrealengine.com/", "https://www.unrealengine.com/", "https://www.unrealengine.com/en-US/onlinelearning-courses"],
         "Microsoft Excel": ["https://support.microsoft.com/en-us/excel", "https://exceljet.net/", "https://www.gcflearnfree.org/excel2016/"],
         # ... add other apps and their official resources here
