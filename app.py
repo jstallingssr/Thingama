@@ -20,6 +20,22 @@ class ChatResponse(NamedTuple):
 
 
 def send_app(app: str, difficulty: str) -> ChatResponse:
+    official_resources = {
+        "Blender": "https://docs.blender.org/",
+        "Blender Official Website": "https://www.blender.org/",
+        "Blender Guru": "https://www.blenderguru.com/",
+        "CG Cookie": "https://cgcookie.com/",
+        "Blender Nation": "https://www.blendernation.com/",
+        "Blender Stack Exchange": "https://blender.stackexchange.com/",
+        "Blender Artists": "https://blenderartists.org/",
+        "BlenderNation": "https://www.blendernation.com/",
+        "Blender.Today": "http://blender.today/",
+        "Unreal Engine": "https://docs.unrealengine.com/",
+        "Microsoft Excel": "https://support.microsoft.com/en-us/excel"
+        # ... add other apps and their official resources here
+    }
+    official_resource = official_resources.get(app, "")
+    
     prompt = (
         f"Create a {difficulty}-level lesson plan for {app}. The class should focus on a specific feature "
         f"of the software and be achievable within a 45-60 minute timeframe. "
@@ -28,9 +44,7 @@ def send_app(app: str, difficulty: str) -> ChatResponse:
         f"- An outline detailing up to three levels of depth\n"
         f"- Three to five specific deliverables for the students to create during the class\n"
         f"- A list of required materials, including software, hardware, and other necessary items\n"
-        f"- An 'Additional Resources' section containing links to relevant official documentation like "
-        f"[Blender](https://docs.blender.org/), [Unreal Engine](https://docs.unrealengine.com/), "
-        f"[Microsoft Excel](https://support.microsoft.com/en-us/excel), and others.\n\n"
+        f"- An 'Additional Resources' section containing up to four links to the official documentation: {official_resource}\n\n"
         f"Please ensure that no class is repeated within a user's session and that no time estimates "
         f"are provided for each item. Thank you."
     )
