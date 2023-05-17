@@ -31,6 +31,8 @@ def send_app(app: str, difficulty: str) -> ChatResponse:
         f"Each class should include three to five specific items that the student will create and deliver "
         f"or deliver during class (a game feature, an art asset, a texture, etc.). "
         f"Do not repeat any suggested classes during a user's session."
+        f"Do not list time estimates for each item."
+        f"Each class should have a list of required materials at the top, including any software, hardware, or other materials needed to complete the class. "
         f"Each outline should also have an additional resource section at the bottom with relevant links"
         f"When providing additional resources, only use OFFICIAL resources and working links such as Blender https://docs.blender.org/, Unreal Engine https://docs.unrealengine.com/, Microsoft Excel https://support.microsoft.com/en-us/excel, Roblox https://developer.roblox.com/en-us/, Ableton Live https://www.ableton.com/en/manual/welcome-to-live/, Godot https://docs.godotengine.org/en/stable/, BandLab https://help.bandlab.com/hc/en-us, Unity https://docs.unity3d.com/Manual/index.html, Construct 3 https://www.construct.net/en/make-games/manuals/construct-3, Minecraft https://minecraft.fandom.com/wiki/Tutorials, and Krita https://docs.krita.org/en/."
     )
@@ -120,7 +122,7 @@ def main() -> None:
         "The **Class Creator Thing-a-ma-jig!** is an innovative educational tool that leverages artificial intelligence to create lesson plans for a wide array of software applications. Choose from a curated list of programs, including Blender, Unreal Engine, Unity, and more. Each class can be comfortably completed within a 45-60 minute time frame, and the difficulty level can be customized to match your student's skill, ranging from Beginner to Expert."
     )
 
-    f"Whether you are teaching a one-off class or looking for fresh ideas for your existing students, create unique and comprehensive class outlines with just a few clicks using the Class Creator Thing-a-ma-jig!)"
+    f"Whether you are teaching a one-off class or looking for fresh ideas for your existing students, create unique and comprehensive class outlines with just a few clicks using the **Class Creator Thing-a-ma-jig**!"
 
     app_logo_path, class_outline, app, difficulty, = display_widgets()
 
