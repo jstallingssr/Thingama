@@ -1,4 +1,12 @@
-﻿import openai
+﻿# This app is an innovative educational tool that leverages 
+# artificial intelligence to create lesson plans 
+# for a wide array of software applications including Blender, 
+# Unreal Engine, Unity, and more. Each class can be 
+# comfortably completed within a 45-60 minute time 
+# frame, and the difficulty level can be customized 
+# to match a student's skill level.
+
+import openai
 import streamlit as st
 import random
 import json
@@ -26,7 +34,7 @@ class ChatResponse(NamedTuple):
 # Function to send an application and difficulty to OpenAI API and get a lesson plan as a response
 def send_app(app: str, difficulty: str) -> ChatResponse:
     # Load the available resources from a JSON file
-    with open('resources.json', 'r') as f:
+    with open("resources.json", "r") as f:
         resources = json.load(f)
 
     # Select three random resources for the given app
@@ -84,7 +92,7 @@ app_logos = {
     "Construct 3": "images/construct.png",
     "Minecraft": "images/minecraft.png",
     "Krita": "images/krita.png",
-    "Twinmotion": "images/twinmotion.png"
+    "Twinmotion": "images/twinmotion.png",
 }
 
 # Function to display the Streamlit widgets and get user input
@@ -105,7 +113,7 @@ def display_widgets() -> tuple:
         "Construct 3",
         "Minecraft",
         "Krita",
-        "Twinmotion"
+        "Twinmotion",
     ]
 
     # Select an application from the dropdown menu
@@ -127,8 +135,9 @@ def display_widgets() -> tuple:
     # Generate a class button
     if st.button("Generate a Class!", key="generate_class_button"):
         unique_id = time()
-        with st.spinner(text="Building your class - hang tight! This can take up to 30 seconds..."):
-
+        with st.spinner(
+            text="Building your class - hang tight! This can take up to 30 seconds..."
+        ):
             # Get the AI-generated lesson plan from cache or generate a new one
             class_outline = get_cached_code_info(
                 app=app, difficulty=difficulty, unique_id=unique_id
@@ -160,11 +169,12 @@ def main() -> None:
     f"Whether you are teaching a one-off class or looking for fresh ideas for your existing students, create unique and comprehensive class outlines with just a few clicks using the **Class Creator Thing-a-ma-jig**!"
 
     # Display the widgets and get user input
-    app_logo_path, class_outline, app, difficulty, = display_widgets()
+    (
+        class_outline,
+    ) = display_widgets()
 
     # Check if a class outline is generated
     if class_outline is not None:
-
         # Function description missing here, consider adding it
         new_class_clicked = False
 
@@ -173,4 +183,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
