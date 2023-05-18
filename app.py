@@ -1,4 +1,4 @@
-﻿# This app is an innovative educational tool that leverages 
+﻿#  This app is an innovative educational tool that leverages 
 # artificial intelligence to create lesson plans 
 # for a wide array of software applications including Blender, 
 # Unreal Engine, Unity, and more. Each class can be 
@@ -281,6 +281,7 @@ app_logos = {
     "Twinmotion": "images/twinmotion.png",
 }
 
+
 # Function to display the Streamlit widgets and get user input
 def display_widgets() -> tuple:
     # Display the image for the application selection
@@ -343,6 +344,7 @@ def display_widgets() -> tuple:
 
     return None, None, None, None
 
+
 # Main function to run the Streamlit application
 def main() -> None:
     # Display the main image and introduction
@@ -369,6 +371,7 @@ def main() -> None:
 
         if new_class_clicked:
             st.stop()
+
 
 if __name__ == "__main__":
     main()
