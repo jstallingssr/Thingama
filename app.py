@@ -1,12 +1,4 @@
-﻿# This app is an innovative educational tool that leverages 
-# artificial intelligence to create lesson plans 
-# for a wide array of software applications including Blender, 
-# Unreal Engine, Unity, and more. Each class can be 
-# comfortably completed within a 45-60 minute time 
-# frame, and the difficulty level can be customized 
-# to match a student's skill level.
-
-import openai
+﻿import openai
 import streamlit as st
 import random
 import json
@@ -27,9 +19,11 @@ st.set_page_config(
 with open("style.css") as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 
+
 # NamedTuple for representing a chat response
 class ChatResponse(NamedTuple):
     content: str
+
 
 # Function to send an application and difficulty to OpenAI API and get a lesson plan as a response
 def send_app(app: str, difficulty: str) -> ChatResponse:
@@ -67,17 +61,21 @@ def send_app(app: str, difficulty: str) -> ChatResponse:
     # Return the generated class response as a ChatResponse object
     return ChatResponse(response.choices[0].text.strip())
 
+
 # Function to retrieve the AI-generated lesson plan as a string
 def retrieve_ai_answer(app: str, difficulty: str) -> str:
     return send_app(app, difficulty).content.strip()
 
+
 # Partial function to retrieve the AI-generated lesson plan using the application and difficulty arguments
 get_code_info = partial(retrieve_ai_answer)
+
 
 # Cache the result of the AI-generated lesson plan for a given app, difficulty, and unique ID
 @st.cache_data(show_spinner=False)
 def get_cached_code_info(app: str, difficulty: str, unique_id: float) -> str:
     return get_code_info(app=app, difficulty=difficulty)
+
 
 # Dictionary mapping application names to their respective logo image paths
 app_logos = {
@@ -94,6 +92,7 @@ app_logos = {
     "Krita": "images/krita.png",
     "Twinmotion": "images/twinmotion.png",
 }
+
 
 # Function to display the Streamlit widgets and get user input
 def display_widgets() -> tuple:
@@ -157,6 +156,7 @@ def display_widgets() -> tuple:
 
     return None, None, None, None
 
+
 # Main function to run the Streamlit application
 def main() -> None:
     # Display the main image and introduction
@@ -170,7 +170,10 @@ def main() -> None:
 
     # Display the widgets and get user input
     (
+        app_logo_path,
         class_outline,
+        app,
+        difficulty,
     ) = display_widgets()
 
     # Check if a class outline is generated
@@ -180,6 +183,7 @@ def main() -> None:
 
         if new_class_clicked:
             st.stop()
+
 
 if __name__ == "__main__":
     main()
